@@ -49,13 +49,14 @@ export const useEditorStore = create<EditorState>((set) => ({
 
   setVideoUrl: (url) => set({ videoUrl: url }),
 
-  setVideoDuration: (duration) => set({
+setVideoDuration: (duration) =>
+  set((state) => ({
     videoDuration: duration,
-    settings: (state) => ({
+    settings: {
       ...state.settings,
       trimEnd: duration,
-    }),
-  }),
+    },
+  })),
 
   setCurrentTime: (time) => set({ currentTime: time }),
 
