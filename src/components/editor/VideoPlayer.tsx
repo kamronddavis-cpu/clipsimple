@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { useEditorStore } from '@/store/editorStore';
 
@@ -17,8 +17,8 @@ export default function VideoPlayer() {
     settings,
   } = useEditorStore();
 
-  const [volume, setVolume] = React.useState(1);
-  const [isMuted, setIsMuted] = React.useState(false);
+const [volume, setVolume] = useState(1);
+const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
     if (!videoRef.current) return;
