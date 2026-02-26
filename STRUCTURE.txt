@@ -1,0 +1,38 @@
+clipsimple/
+|-- DEPLOYMENT.md
+|-- PROJECT_SUMMARY.md
+|-- QUICKSTART.md
+|-- README.md
+|-- STRUCTURE.txt
+|-- next.config.js
+|-- package.json
+|-- postcss.config.js
+|-- public
+|-- src
+|   |-- app
+|   |   |-- api
+|   |   |-- auth
+|   |   |-- dashboard
+|   |   |-- editor
+|   |   |-- globals.css
+|   |   |-- layout.tsx
+|   |   `-- page.tsx
+|   |-- components
+|   |   |-- dashboard
+|   |   |-- editor
+|   |   `-- ui
+|   |-- hooks
+|   |-- lib
+|   |   |-- stripe.ts
+|   |   |-- supabase.ts
+|   |   `-- templates.ts
+|   |-- store
+|   |   `-- editorStore.ts
+|   |-- styles
+|   `-- types
+|       `-- index.ts
+|-- supabase-schema.sql
+|-- tailwind.config.ts
+`-- tsconfig.json
+
+17 directories, 19 files
